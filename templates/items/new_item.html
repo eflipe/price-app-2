@@ -1,0 +1,21 @@
+{%  extends "base.html" %}
+{% block content %}
+    <header><h1>Crear Item</h1></header>
+    <section class="create-item-form">
+        <form method="post" action="">
+            <div class="form-group">
+                <label for="url">URL</label>
+                <input class="form-control" type="text" id="url" name="url" placeholder="https://...">
+            </div>
+            <div>
+                <label class="form-group" for="tag_name">Tag Name</label>
+                <input type="text" class="form-control" id="tag_name" name="tag_name" aria-describedby="tagNameHelp">
+                <small class="form-text text-muted" id="tagNameHelp">
+                    Algùn tipo de ayuda
+                </small>
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+
+    </section>
+{% endblock %}
